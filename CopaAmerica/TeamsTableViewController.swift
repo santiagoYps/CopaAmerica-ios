@@ -16,7 +16,7 @@ class TeamsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        teams = ["Argentina", "Bolivia", "Brasil" , "Chile", "Colombia", "Ecuador", "Japón" , "Paraguay" , "Perú", "Qatar", "Uruguay", "Venezuela"]
+        teams = ["Argentina", "Bolivia", "Brasil" , "Chile", "Colombi", "Ecuador", "Japón" , "Paraguay" , "Perú", "Qatar", "Uruguay", "Venezuela"]
         
         teamsImg = ["argentina", "bolivia", "brasil" , "chile", "colombia", "ecuador", "japon" , "paraguay" , "peru", "qatar", "uruguay", "venezuela"]
 
