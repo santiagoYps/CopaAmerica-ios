@@ -13,6 +13,9 @@
 		0420630022DA98D0004D8740 /* EliminatoriasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042062FE22DA98D0004D8740 /* EliminatoriasViewController.xib */; };
 		0436EE8A22DED4AA00AA80D0 /* GroupsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436EE8922DED4AA00AA80D0 /* GroupsTableTableViewController.swift */; };
 		0436EE8C22DEDB2100AA80D0 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436EE8B22DEDB2100AA80D0 /* TeamsTableViewController.swift */; };
+		04370A7922E662DB00233330 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04370A7822E662DB00233330 /* Teams.swift */; };
+		04370A7B22E6644600233330 /* TeamsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04370A7A22E6644600233330 /* TeamsManager.swift */; };
+		04370A7D22E6739200233330 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04370A7C22E6739200233330 /* TeamsViewController.swift */; };
 		04F978D922D53EA9001E0EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F978D822D53EA9001E0EF7 /* AppDelegate.swift */; };
 		04F978DB22D53EA9001E0EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F978DA22D53EA9001E0EF7 /* ViewController.swift */; };
 		04F978DE22D53EA9001E0EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F978DC22D53EA9001E0EF7 /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 		042062FE22DA98D0004D8740 /* EliminatoriasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EliminatoriasViewController.xib; sourceTree = "<group>"; };
 		0436EE8922DED4AA00AA80D0 /* GroupsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableTableViewController.swift; sourceTree = "<group>"; };
 		0436EE8B22DEDB2100AA80D0 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		04370A7822E662DB00233330 /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		04370A7A22E6644600233330 /* TeamsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsManager.swift; sourceTree = "<group>"; };
+		04370A7C22E6739200233330 /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		04F978D522D53EA9001E0EF7 /* CopaAmerica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopaAmerica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F978D822D53EA9001E0EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F978DA22D53EA9001E0EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 				04F978E422D53EAA001E0EF7 /* Info.plist */,
 				0436EE8922DED4AA00AA80D0 /* GroupsTableTableViewController.swift */,
 				0436EE8B22DEDB2100AA80D0 /* TeamsTableViewController.swift */,
+				04370A7822E662DB00233330 /* Teams.swift */,
+				04370A7A22E6644600233330 /* TeamsManager.swift */,
+				04370A7C22E6739200233330 /* TeamsViewController.swift */,
 			);
 			path = CopaAmerica;
 			sourceTree = "<group>";
@@ -163,11 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04370A7922E662DB00233330 /* Teams.swift in Sources */,
 				042062FF22DA98D0004D8740 /* EliminatoriasViewController.swift in Sources */,
+				04370A7B22E6644600233330 /* TeamsManager.swift in Sources */,
 				0436EE8A22DED4AA00AA80D0 /* GroupsTableTableViewController.swift in Sources */,
 				042062FB22DA97A9004D8740 /* GruposViewController.swift in Sources */,
 				04F978DB22D53EA9001E0EF7 /* ViewController.swift in Sources */,
 				0436EE8C22DEDB2100AA80D0 /* TeamsTableViewController.swift in Sources */,
+				04370A7D22E6739200233330 /* TeamsViewController.swift in Sources */,
 				04F978D922D53EA9001E0EF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
