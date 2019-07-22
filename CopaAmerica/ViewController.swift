@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             cell.textLabel?.text = partidosG[indexPath.row]
+            
         default:
             cell.textLabel?.text = partidosE[indexPath.row]
         }
