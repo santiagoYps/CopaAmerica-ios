@@ -61,6 +61,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imgVisitante.image = UIImage(named: changeName(name: matches[indexPath.row].visitor))
         cell.marcador.text = matches[indexPath.row].score
         cell.grupo.text = "Grupo "+matches[indexPath.row].group
+        cell.date.text = matches[indexPath.row].date
         
         return cell
     }
