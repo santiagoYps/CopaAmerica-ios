@@ -50,6 +50,19 @@ class TeamsTableViewController: UITableViewController {
         //cell.imageView!.image = UIImage(named: teamsImg[indexPath.row])!
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toViewTeamSegue"{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let team = teamsManager.getTeams(at:indexPath.row)
+                let destVC = segue.destination as! TeamsViewController
+                destVC.txtPassName = team.name
+                destVC.txtPassNote = team.note
+                destVC.txtPassImage = team.imageTeam2
+            }
+        }
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

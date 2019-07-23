@@ -15,6 +15,7 @@ struct Teams {
     static let defaultCover = UIImage(named: "colombia")!
     var name:String
     var imageTeam:String
+    var imageTeam2:String
     var note:String
     //Use a default cover if none is set
     var cover:UIImage {
@@ -28,9 +29,10 @@ struct Teams {
     private var image:UIImage? = nil
     
     
-    init(name:String,imageTeam:String,note:String,cover:UIImage? = nil) {
+    init(name:String,imageTeam:String,imageTeam2:String,note:String,cover:UIImage? = nil) {
         self.name = name
         self.imageTeam = imageTeam
+        self.imageTeam2 = imageTeam2
         self.note = note
         self.image = cover
     }

@@ -10,7 +10,11 @@ import UIKit
 
 class TeamsViewController: UIViewController {
     
+    var txtPassName: String?
+    var txtPassNote: String?
+    var txtPassImage: String?
     
+    var team: Teams?
     @IBOutlet weak var noteTextView: UITextView!
     @IBOutlet weak var nameTextView: UITextView!
     @IBOutlet weak var teamCover: UIImageView!
@@ -21,6 +25,15 @@ class TeamsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let txtPassName = txtPassName {
+            navigationItem.title = txtPassName
+            noteTextView.text = txtPassNote
+            teamCover.image = UIImage(named: txtPassImage!)
+        }
+    }
 
     /*
     // MARK: - Navigation
