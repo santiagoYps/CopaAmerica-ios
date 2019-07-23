@@ -32,7 +32,7 @@
                                 <rect key="frame" x="20" y="100" width="374" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="matchCell" rowHeight="100" id="BZH-GC-CWY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MatchCell" rowHeight="100" id="BZH-GC-CWY" customClass="MatchCell" customModule="CopaAmerica" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BZH-GC-CWY" id="Szg-5f-9al">
@@ -122,8 +122,20 @@
                                                 <constraint firstAttribute="trailing" secondItem="Ojn-Fu-Auf" secondAttribute="trailing" constant="4" id="ydE-KT-KTi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="date" destination="Q35-Yf-K0P" id="efv-Cl-a6y"/>
+                                            <outlet property="grupo" destination="Cyf-8X-mfk" id="OTG-Sh-W0M"/>
+                                            <outlet property="imgLocal" destination="n0i-q3-3Ez" id="BnE-gn-o4P"/>
+                                            <outlet property="imgVisitante" destination="pxm-NA-Qnq" id="Jm5-NN-aL9"/>
+                                            <outlet property="local" destination="J8U-Fg-y8U" id="uTW-ef-O1x"/>
+                                            <outlet property="marcador" destination="oP0-GJ-dcj" id="qIr-pT-S5U"/>
+                                            <outlet property="visitante" destination="Ojn-Fu-Auf" id="4FC-9z-Ro1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xwD-yu-8oL" id="Oxe-43-Vg7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

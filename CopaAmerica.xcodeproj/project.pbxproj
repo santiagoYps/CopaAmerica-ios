@@ -13,6 +13,8 @@
 		0420630022DA98D0004D8740 /* EliminatoriasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042062FE22DA98D0004D8740 /* EliminatoriasViewController.xib */; };
 		0436EE8A22DED4AA00AA80D0 /* GroupsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436EE8922DED4AA00AA80D0 /* GroupsTableTableViewController.swift */; };
 		0436EE8C22DEDB2100AA80D0 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0436EE8B22DEDB2100AA80D0 /* TeamsTableViewController.swift */; };
+		04C9B3C822E7A00300029B6B /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B3C722E7A00300029B6B /* Match.swift */; };
+		04C9B3CA22E7AA8A00029B6B /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B3C922E7AA8A00029B6B /* MatchCell.swift */; };
 		04F978D922D53EA9001E0EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F978D822D53EA9001E0EF7 /* AppDelegate.swift */; };
 		04F978DB22D53EA9001E0EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F978DA22D53EA9001E0EF7 /* ViewController.swift */; };
 		04F978DE22D53EA9001E0EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F978DC22D53EA9001E0EF7 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		042062FE22DA98D0004D8740 /* EliminatoriasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EliminatoriasViewController.xib; sourceTree = "<group>"; };
 		0436EE8922DED4AA00AA80D0 /* GroupsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableTableViewController.swift; sourceTree = "<group>"; };
 		0436EE8B22DEDB2100AA80D0 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		04C9B3C722E7A00300029B6B /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Match.swift; path = FasesVC/Match.swift; sourceTree = "<group>"; };
+		04C9B3C922E7AA8A00029B6B /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
 		04F978D522D53EA9001E0EF7 /* CopaAmerica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopaAmerica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F978D822D53EA9001E0EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F978DA22D53EA9001E0EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				04F978E422D53EAA001E0EF7 /* Info.plist */,
 				0436EE8922DED4AA00AA80D0 /* GroupsTableTableViewController.swift */,
 				0436EE8B22DEDB2100AA80D0 /* TeamsTableViewController.swift */,
+				04C9B3C722E7A00300029B6B /* Match.swift */,
+				04C9B3C922E7AA8A00029B6B /* MatchCell.swift */,
 			);
 			path = CopaAmerica;
 			sourceTree = "<group>";
@@ -169,6 +175,8 @@
 				04F978DB22D53EA9001E0EF7 /* ViewController.swift in Sources */,
 				0436EE8C22DEDB2100AA80D0 /* TeamsTableViewController.swift in Sources */,
 				04F978D922D53EA9001E0EF7 /* AppDelegate.swift in Sources */,
+				04C9B3C822E7A00300029B6B /* Match.swift in Sources */,
+				04C9B3CA22E7AA8A00029B6B /* MatchCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
