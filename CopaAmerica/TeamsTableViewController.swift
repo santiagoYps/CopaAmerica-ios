@@ -10,21 +10,17 @@ import UIKit
 
 class TeamsTableViewController: UITableViewController {
     
-    var teams: [String] = []
-    var teamsImg: [String] = []
+    //var teams: [String] = []
+    //var teamsImg: [String] = []
+    var teamsManager:TeamsManager = TeamsManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        teams = ["Argentina", "Bolivia", "Brasil" , "Chile", "Colombi", "Ecuador", "Japón" , "Paraguay" , "Perú", "Qatar", "Uruguay", "Venezuela"]
+        //teams = ["Argentina", "Bolivia", "Brasil" , "Chile", "Colombi", "Ecuador", "Japón" , "Paraguay" , "Perú", "Qatar", "Uruguay", "Venezuela"]
         
-        teamsImg = ["argentina", "bolivia", "brasil" , "chile", "colombia", "ecuador", "japon" , "paraguay" , "peru", "qatar", "uruguay", "venezuela"]
+        //teamsImg = ["argentina", "bolivia", "brasil" , "chile", "colombia", "ecuador", "japon" , "paraguay" , "peru", "qatar", "uruguay", "venezuela"]
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -37,15 +33,35 @@ class TeamsTableViewController: UITableViewController {
     //Returns the number of rows in the table section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return teams.count
+        return teamsManager.teamsCount
     }
     
     //Sets the cell look and feel and data in the table row
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "teamsCell", for: indexPath)
-        cell.textLabel?.text = teams[indexPath.row]
-        cell.imageView!.image = UIImage(named: teamsImg[indexPath.row])!
+        
+        let team = teamsManager.getTeams(at:indexPath.row)
+        
+        //Set the text, label an image for each according to the format design we chose for the cell
+        cell.textLabel?.text = team.name
+        cell.imageView?.image = UIImage(named: team.imageTeam)
+        
+        //cell.textLabel?.text = teams[indexPath.row]
+        //cell.imageView!.image = UIImage(named: teamsImg[indexPath.row])!
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toViewTeamSegue"{
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let team = teamsManager.getTeams(at:indexPath.row)
+                let destVC = segue.destination as! TeamsViewController
+                destVC.txtPassName = team.name
+                destVC.txtPassNote = team.note
+                destVC.txtPassImage = team.imageTeam2
+            }
+        }
     }
 
     /*

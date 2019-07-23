@@ -135,6 +135,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8O7-lA-Kn8" kind="show" identifier="toViewTeamSegue" id="NDQ-3X-aOa"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -147,6 +150,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypa-Pb-Vtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="1171"/>
+        </scene>
+        <!--Teams View Controller-->
+        <scene sceneID="jF2-uT-boc">
+            <objects>
+                <viewController id="8O7-lA-Kn8" customClass="TeamsViewController" customModule="CopaAmerica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qvi-wa-m9P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Xo-Qo-VT8">
+                                <rect key="frame" x="20" y="79" width="374" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Czs-ja-xJs"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="giy-fD-7Ic">
+                                <rect key="frame" x="20" y="249" width="374" height="418"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Xo-Qo-VT8" firstAttribute="top" secondItem="jcc-NH-afg" secondAttribute="top" constant="15" id="BZd-gi-voV"/>
+                            <constraint firstItem="jcc-NH-afg" firstAttribute="trailing" secondItem="giy-fD-7Ic" secondAttribute="trailing" constant="20" id="baa-Kg-VUe"/>
+                            <constraint firstItem="6Xo-Qo-VT8" firstAttribute="leading" secondItem="jcc-NH-afg" secondAttribute="leading" constant="20" id="cn2-IL-bbR"/>
+                            <constraint firstItem="giy-fD-7Ic" firstAttribute="leading" secondItem="jcc-NH-afg" secondAttribute="leading" constant="20" id="jsJ-lU-vnA"/>
+                            <constraint firstItem="jcc-NH-afg" firstAttribute="bottom" secondItem="giy-fD-7Ic" secondAttribute="bottom" constant="20" id="kF6-i6-Qqv"/>
+                            <constraint firstItem="giy-fD-7Ic" firstAttribute="top" secondItem="6Xo-Qo-VT8" secondAttribute="bottom" constant="20" id="pWx-8W-Ig8"/>
+                            <constraint firstItem="jcc-NH-afg" firstAttribute="trailing" secondItem="6Xo-Qo-VT8" secondAttribute="trailing" constant="20" id="wyz-Gv-wI0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jcc-NH-afg"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteTextView" destination="giy-fD-7Ic" id="i4a-7I-H8f"/>
+                        <outlet property="teamCover" destination="6Xo-Qo-VT8" id="LlK-bc-uhX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6JV-Lr-6Q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.92753623188409" y="1861.9565217391305"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xkB-v0-Gr3">
@@ -170,7 +216,6 @@
         <!--Encuentros-->
         <scene sceneID="3Wu-45-46K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HYf-yg-JVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r1F-Z3-EZb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Encuentros" image="match" id="AMt-9t-vN1"/>
                     <toolbarItems/>
@@ -183,13 +228,13 @@
                         <segue destination="xwD-yu-8oL" kind="relationship" relationship="rootViewController" id="Zjf-pi-TWl"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYf-yg-JVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1110" y="457"/>
         </scene>
         <!--Grupos-->
         <scene sceneID="fvP-5u-QMe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dBJ-yv-XZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rrl-by-Yg9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Grupos" image="groups" id="hpO-kJ-dzr"/>
                     <toolbarItems/>
@@ -202,6 +247,7 @@
                         <segue destination="xY0-It-l7z" kind="relationship" relationship="rootViewController" id="Ap6-F2-z6K"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dBJ-yv-XZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-429" y="457"/>
         </scene>
